@@ -869,10 +869,15 @@ img {
   }
   .play__viewport {
     max-width: 340px;
+    max-height: 241px;
   }
   .play__content {
     max-width: 340px;
     text-align: center;
+  }
+  .play__desc {
+    font-size: 14px;
+    min-height: 100px;
   }
   .play__content-inner {
     min-height: 96px;
@@ -1325,6 +1330,10 @@ img {
   .cta {
     padding: 56px 0 56px;
   }
+
+  .hero__title {
+    font-size: 42px;
+  }
   .cta__grid {
     grid-template-columns: 1fr;
     gap: 56px;
@@ -1335,6 +1344,17 @@ img {
   }
   .cta__title {
     font-size: 2.1rem;
+  }
+
+  .whole__title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+  .why__title {
+    font-size: 32px;
+  }
+  .boarding__title {
+    font-size: 32px;
   }
 }
 

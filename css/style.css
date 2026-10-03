@@ -1726,6 +1726,9 @@ img {
   .life__text {
     margin-bottom: 40px;
   }
+  .life__img--last-item {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 575.98px) {

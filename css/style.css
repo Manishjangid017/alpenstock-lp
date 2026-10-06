@@ -1365,6 +1365,9 @@ img {
   .cta__btn {
     width: 100%;
   }
+  .bento__horse img {
+    object-position: top center;
+  }
 }
 
 /*==================================================
@@ -1608,7 +1611,7 @@ img {
     gap: 18px;
   }
   .footer__credit {
-    padding-top: 28px;
+    padding-top: 8px;
   }
 }
 

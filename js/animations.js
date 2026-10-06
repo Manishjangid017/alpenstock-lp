@@ -68,7 +68,6 @@
       stagger: 0.06,
     },
     { items: '.footer__bottom', fx: 'fade' },
-    { items: '.footer__credit', fx: 'fade', delay: 0.1 },
   ];
 
   /* ---------- 2. Headline splitter (word-mask reveal) ---------- */

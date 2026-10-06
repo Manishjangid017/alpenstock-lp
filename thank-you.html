@@ -15,20 +15,336 @@
       })(window, document, 'script', 'dataLayer', 'GTM-5JK8ZBF2');
     </script>
     <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Thank You | Alpenstock World School</title>
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="icon" href="images/favicon.webp" sizes="32x32" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css?v=4" />
+
+    <style>
+      /* ── Page shell ── */
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #061324;
+        background: #ffffff;
+      }
+
+      /* ── Top nav bar ── */
+      .ty-nav {
+        padding: 14px 0;
+        border-bottom: 1px solid #e8dfc8;
+      }
+
+      .ty-nav__inner {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        max-width: calc(1280px + 48px);
+        margin-inline: auto;
+        padding-inline: 24px;
+      }
+
+      .ty-nav__logo img {
+        display: block;
+        width: 74px;
+        height: auto;
+      }
+
+      .ty-nav__name {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        color: #061324;
+      }
+
+      .ty-nav__name strong {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.05rem;
+        letter-spacing: 0.01em;
+      }
+
+      .ty-nav__name span {
+        font-size: 0.72rem;
+        font-weight: 400;
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      /* ── Main content ── */
+      .ty-main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(48px, 8vw, 40px) 24px;
+      }
+
+      .ty-card {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 8px 48px rgba(6, 19, 36, 0.1);
+        padding: clamp(40px, 6vw, 72px) clamp(32px, 6vw, 80px);
+        max-width: 640px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* checkmark circle */
+      .ty-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #f59e0b 0%, #e11d48 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 28px;
+        animation: ty-pop 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .ty-icon i {
+        font-size: 2rem;
+        color: #fff;
+        line-height: 1;
+      }
+
+      @keyframes ty-pop {
+        from {
+          opacity: 0;
+          transform: scale(0.6);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .ty-eyebrow {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #e11d48;
+        background: rgba(225, 29, 72, 0.08);
+        border-radius: 100px;
+        padding: 4px 14px;
+        margin-bottom: 18px;
+        animation: ty-fadein 0.5s 0.2s ease both;
+      }
+
+      .ty-title {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        font-weight: 700;
+        line-height: 1.2;
+        color: #061324;
+        margin-bottom: 16px;
+        animation: ty-fadein 0.5s 0.35s ease both;
+      }
+
+      .ty-text {
+        font-size: clamp(0.92rem, 2vw, 1rem);
+        color: #4b5563;
+        line-height: 1.75;
+        margin-bottom: 36px;
+        animation: ty-fadein 0.5s 0.5s ease both;
+      }
+
+      .ty-text strong {
+        color: #061324;
+      }
+
+      .ty-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: ty-fadein 0.5s 0.65s ease both;
+      }
+
+      .ty-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(135deg, #f59e0b, #e11d48);
+        color: #fff;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 700;
+        font-size: 0.88rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 13px 28px;
+        border-radius: 100px;
+        text-decoration: none;
+        transition:
+          opacity 0.2s,
+          transform 0.2s;
+      }
+
+      .ty-btn-primary:hover {
+        opacity: 0.88;
+        transform: translateY(-1px);
+        color: #fff;
+      }
+
+      .ty-btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: transparent;
+        color: #061324;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 700;
+        font-size: 0.88rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 13px 28px;
+        border-radius: 100px;
+        border: 2px solid #061324;
+        text-decoration: none;
+        transition:
+          background 0.2s,
+          color 0.2s,
+          transform 0.2s;
+      }
+
+      .ty-btn-ghost:hover {
+        background: #061324;
+        color: #fff;
+        transform: translateY(-1px);
+      }
+
+      /* divider */
+      .ty-divider {
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        margin: 36px 0 28px;
+      }
+
+      .ty-contact {
+        font-size: 0.82rem;
+        color: #6b7280;
+        animation: ty-fadein 0.5s 0.8s ease both;
+      }
+
+      .ty-contact a {
+        color: #061324;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .ty-contact a:hover {
+        text-decoration: underline;
+      }
+
+      @keyframes ty-fadein {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ── Footer (reuses footer styles from style.css) ── */
+      /* override footer margin so it sits at the bottom */
+      .footer {
+        margin-top: 0;
+      }
+    </style>
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5JK8ZBF2"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+      ></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ── Top Navigation ── -->
+    <nav class="ty-nav" aria-label="Site header">
+      <div class="ty-nav__inner">
+        <a href="/" class="ty-nav__logo" aria-label="Alpenstock home">
+          <img src="images/top-logo.webp" alt="Alpenstock World School" width="56" height="56" />
+        </a>
+        <div class="ty-nav__name">
+          <strong>Alpenstock</strong>
+          <span>World School · Dunera</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── Main Thank You Card ── -->
+    <main class="ty-main" id="main-content">
+      <div class="ty-card">
+        <!-- Icon -->
+        <div class="ty-icon" aria-hidden="true">
+          <i class="bi bi-check-lg"></i>
+        </div>
+
+        <!-- Badge -->
+        <span class="ty-eyebrow">Enquiry Received</span>
+
+        <!-- Heading -->
+        <h1 class="ty-title">Thank You for Reaching Out!</h1>
+
+        <!-- Body copy -->
+        <p class="ty-text">
+          We've received your enquiry and a member of our admissions team will be in touch with you within
+          <strong>24–48 hours</strong>. We look forward to welcoming you to the
+          <strong>Alpenstock World School</strong> family.
+        </p>
+        <hr class="ty-divider" />
+
+        <!-- Quick contact line -->
+        <p class="ty-contact">
+          Questions? Email us at
+          <a href="mailto:admissions@alpenstockworldschool.com">admissions@alpenstockworldschool.com</a>
+          or WhatsApp
+          <a href="https://wa.me/919317903411">+91 93179 03411</a>
+        </p>
+      </div>
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+      <div class="footer__credit mt-0 pt-3">Design and Developed By <b>Mediagarh</b></div>
+    </footer>
+    <script type="text/javascript">
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://widgets.in6.nopaperforms.com/emwgts.js';
+      document.body.appendChild(s);
+    </script>
   </body>
 </html>

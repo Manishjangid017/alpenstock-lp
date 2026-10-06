@@ -85,13 +85,15 @@
   transform: none;
 }
 
-/* ---------- Hero: cinematic video settle + parallax ---------- */
+/* ---------- Hero: cinematic video settle ---------- */
 .has-anim .hero__video {
-  top: -16%; /* extra height so parallax never shows a gap */
-  height: 132%;
-  scale: 1.14;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scale: 1.08;
   transition: scale 2.8s var(--rv-ease);
-  will-change: transform;
+  will-change: scale;
 }
 
 .has-anim .hero.is-loaded .hero__video {
@@ -99,7 +101,7 @@
 }
 
 .hero__content {
-  will-change: transform, opacity;
+  /* will-change removed — no JS opacity/transform applied to this element */
 }
 
 /* ---------- Bento: image settles in as each cell appears ---------- */

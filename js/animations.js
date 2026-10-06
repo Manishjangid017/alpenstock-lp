@@ -230,7 +230,6 @@
   document.body.appendChild(bar);
 
   var heroVideo = hero && hero.querySelector('.hero__video');
-  var heroContent = hero && hero.querySelector('.hero__content');
   var ticking = false;
 
   function update() {
@@ -238,15 +237,6 @@
     var y = window.pageYOffset || document.documentElement.scrollTop;
     var max = document.documentElement.scrollHeight - window.innerHeight;
     bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
-
-    if (hero && y <= hero.offsetHeight) {
-      var p = y / hero.offsetHeight;
-      if (heroVideo) heroVideo.style.transform = 'translate3d(0,' + (y * 0.15).toFixed(1) + 'px,0)';
-      if (heroContent) {
-        heroContent.style.transform = 'translate3d(0,' + (y * 0.1).toFixed(1) + 'px,0)';
-        heroContent.style.opacity = Math.max(0, 1 - p * 1.3).toFixed(3);
-      }
-    }
   }
 
   function onScroll() {

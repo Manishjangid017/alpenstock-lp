@@ -91,16 +91,14 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
-  margin-top: auto;
-  bottom: 0px;
   background: linear-gradient(8deg, #061324 18.27%, rgba(6, 19, 36, 0.5) 53.68%, rgba(6, 19, 36, 0) 90.84%);
 }
 
 .hero__inner {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-top: 24px;
+  justify-content: space-around;
+  padding-top: 12px;
   padding-bottom: 122px;
 }
 
@@ -110,9 +108,64 @@ img {
   height: auto;
 }
 
+/* Two-column wrapper inside hero (left content + right CRM box) */
+.hero__columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 8px;
+}
+
 .hero__content {
   max-width: 716px;
-  margin-top: 48px;
+  margin-top: 0;
+  flex: 1 1 auto;
+}
+
+/* CRM visits box */
+.hero__crm-box {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 410px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6.6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.hero__crm-label {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: #000;
+  margin: 0 0 10px;
+}
+
+.hero__crm-count {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  margin: 0 0 6px;
+  font-family: var(--ff-display);
+}
+
+.hero__crm-sub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .hero__columns {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero__crm-box {
+    width: 100%;
+  }
 }
 
 .hero__badge {
@@ -1783,6 +1836,9 @@ img {
   }
   .hero__logo img {
     width: 150px;
+  }
+  .hero__columns {
+    gap: 20px;
   }
   .hero__content {
     margin-top: 40px;

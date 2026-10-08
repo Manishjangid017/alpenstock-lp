@@ -123,6 +123,22 @@ img {
   flex: 1 1 auto;
 }
 
+.form-dsc {
+  font-size: 12px;
+  color: #000;
+}
+
+.form-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #ffedd5;
+  color: #ef7d2d;
+  padding: 2px 10px;
+  border-radius: 9999px;
+}
+
 /* CRM visits box */
 .hero__crm-box {
   flex: 0 0 auto;

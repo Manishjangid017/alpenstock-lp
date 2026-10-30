@@ -213,7 +213,17 @@
           <div class="hero__content">
             <span class="hero__badge">ICSE Residential School in Punjab</span>
 
-            <h1 class="hero__title">Where Learning Becomes <br class="d-none d-md-block" />a Way of Life</h1>
+            <h1 class="hero__title">Where Learning Becomes a Way of Life</h1>
+
+            <script>
+              (function () {
+                var params = new URLSearchParams(window.location.search);
+                var keyword = params.get('utm_keyword');
+                if (keyword) {
+                  document.querySelector('.hero__title').textContent = decodeURIComponent(keyword);
+                }
+              })();
+            </script>
 
             <p class="hero__text">
               At <strong>Alpenstock World School, Dunera</strong>, students experience a complete education through

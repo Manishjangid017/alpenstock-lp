@@ -93,7 +93,10 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(8deg, #061324 18.27%, rgba(6, 19, 36, 0.5) 53.68%, rgba(6, 19, 36, 0) 90.84%);
+  background: linear-gradient(8deg,
+      #061324 18.27%,
+      rgba(6, 19, 36, 0.5) 53.68%,
+      rgba(6, 19, 36, 0) 90.84%);
 }
 
 .hero__inner {
@@ -220,7 +223,7 @@ img {
 .lead-form__input,
 .lead-form__select {
   width: 100%;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 13px;
   color: #061324;
   padding: 9px 12px;
@@ -261,7 +264,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -379,24 +382,22 @@ img {
   color: var(--navy-deep);
   border-radius: 33554400px;
   border: 1px solid rgba(255, 210, 48, 0.4);
-  background: linear-gradient(
-    90deg,
-    #f59e0b 0%,
-    #f4a10b 7.14%,
-    #f2a40a 14.29%,
-    #f1a70a 21.43%,
-    #efaa09 28.57%,
-    #edad09 35.71%,
-    #ecb008 42.86%,
-    #eab308 50%,
-    #e8ab08 57.14%,
-    #e6a207 64.29%,
-    #e39a07 71.43%,
-    #e19107 78.57%,
-    #de8807 85.71%,
-    #dc8006 92.86%,
-    #d97706 100%
-  );
+  background: linear-gradient(90deg,
+      #f59e0b 0%,
+      #f4a10b 7.14%,
+      #f2a40a 14.29%,
+      #f1a70a 21.43%,
+      #efaa09 28.57%,
+      #edad09 35.71%,
+      #ecb008 42.86%,
+      #eab308 50%,
+      #e8ab08 57.14%,
+      #e6a207 64.29%,
+      #e39a07 71.43%,
+      #e19107 78.57%,
+      #de8807 85.71%,
+      #dc8006 92.86%,
+      #d97706 100%);
   box-shadow:
     0 20px 25px -5px rgba(70, 25, 1, 0.6),
     0 8px 10px -6px rgba(70, 25, 1, 0.6);
@@ -513,7 +514,7 @@ img {
 .why {
   position: relative;
   padding: 90px 0 110px;
-  background: url('/images/background-img-1.webp') center / cover no-repeat;
+  background: url("/images/background-img-1.webp") center / cover no-repeat;
 }
 
 /* 
@@ -773,13 +774,13 @@ img {
   will-change: transform, opacity;
 }
 
-.board-media__img[data-pos='active'] {
+.board-media__img[data-pos="active"] {
   opacity: 1;
   transform: translateY(0) scale(1);
   z-index: 2;
 }
 
-.board-media__img[data-pos='before'] {
+.board-media__img[data-pos="before"] {
   transform: translateY(-40px) scale(1.04);
 }
 
@@ -900,7 +901,7 @@ img {
   color: #fff;
   overflow: hidden;
   /* BACKGROUND: put your image here (with its white border baked in) */
-  background: #0284c7 url('/images/play-bg.webp') center / cover no-repeat;
+  background: #0284c7 url("/images/play-bg.webp") center / cover no-repeat;
 }
 
 .play__grid {
@@ -972,7 +973,7 @@ img {
 
 /* purple tint on inactive slides (fades away when active) */
 .play__slide::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(79, 70, 229, 0.45);
@@ -1303,7 +1304,7 @@ img {
   color: #fff;
   overflow: hidden;
   /* BACKGROUND: your single image (gradient + grid lines) */
-  background: #1a0606 url('../images/cta-bg.webp') center / cover no-repeat;
+  background: #1a0606 url("../images/cta-bg.webp") center / cover no-repeat;
 }
 
 .cta__grid {
@@ -1537,6 +1538,7 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .cta-anim,
   .cta__eyebrow-line,
   .cta__frame,
@@ -1864,6 +1866,7 @@ img {
 
 /* Larger screens: the screenshot sizes are small (design ~1100px), scale text up a little */
 @media (min-width: 1200px) {
+
   .footer__about,
   .footer__item,
   .footer__bottom,

@@ -1,0 +1,235 @@
+@media screen and (min-width: 200px) and (max-width: 768px) {
+ .hero-layout-section {
+    padding: 60px 0px;
+    height: auto;
+ }  
+ .hero-layout-section::before {
+    background-position: left;
+ }
+ .hero-layout-contants-heading {
+    font-size: 32px;
+    line-height: 42px;
+ } 
+ .hero-layout-contants-discription {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+ }
+ .apply-now-btn
+ {
+    width: 100%;
+    padding: 14px 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+ }
+  .apply-now-book
+ {
+    width: 100%;
+    padding: 14px 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+ }
+
+ .hero-layout-from {
+    padding: 30px 15px;
+ }
+ .hero-layout-from-heading {
+    font-size: 20px;
+    line-height: 26px; 
+}
+.hero-layout-from-discription {
+    font-size: 14px;
+}
+.why-choose-alpenstock {
+    padding: 60px 0px 30px;
+}
+.why-choose-watermark {
+    display: none;
+}
+.why-choose-heading h2 {
+    font-size: 26px;
+    line-height: 36px;
+}
+.why-choose-heading>p {
+    font-size: 15px;
+    line-height: 26px;
+}
+.why-choose-heading {
+    margin-bottom: 30px;
+}
+.why-choose-card {
+    padding: 35px 20px;
+}
+.academics-layout-section {
+    padding: 60px 0px;
+}
+    .academics-layout-heading
+ {
+    font-size: 26px;
+    line-height: 36px;
+ }
+ .academics-layout-description {
+    font-size: 15px;
+    line-height: 26px;
+ }
+ .acampus-designed-layout {
+    padding: 60px 0px;
+ }
+ .why-choose-heading {
+    margin-bottom: 10px;
+ }
+ .why-choose-heading  p{
+      font-size: 15px!important;
+    line-height: 26px!important;
+ }
+ .acampus-card-title {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+ }
+ .acampus-card-description {
+    font-size: 15px;
+    line-height: 26px;
+    width: 100%;
+ }
+ .acampus-card-action {
+    display: none;
+ }
+     .acampus-designed-layout-slide-card, 
+     .acampus-designed-layout-slide-card.is-active,
+      .acampus-designed-layout-slide-card:not(.is-active) {
+height: 350px!important;
+padding: 10px!important;
+}
+.residential-life {
+    padding: 60px 0px;
+}
+.admissions-open-heading {
+    font-size: 26px;
+    line-height: 36px;
+}
+.residential-life-image {
+    padding-right: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.residential-life-card-content {
+    padding: 15px;
+}
+
+.preparing-laoyut {
+    padding: 0px 0px 60px;
+}
+.preparing-layout-card {
+    padding: 30px 0px 0px 0px;
+}
+.preparing-layout-card-contant {
+    padding: 15px;
+}
+.preparing-layout-card-contant-tag {
+    margin-bottom: 10px;
+}
+.preparing-layout-card-contant-heading {
+     font-size: 26px;
+    line-height: 36px;   
+}
+.preparing-layout-card-descriptions {
+    font-size: 15px;
+    line-height: 26px;
+}
+.apply-for-admission {
+        font-size: 15px;
+    line-height: 26px;
+    width: 100%;
+}
+.bookavisit {
+        font-size: 15px;
+    line-height: 26px;
+    width: 100%;
+}
+    .preparing-director-label {
+        bottom: 0px;
+    }
+        .preparing-layout-card-circle {
+            bottom: 0px;
+        }
+
+.annual-fee-structure-layout{
+    padding: 60px 0px;
+}
+.preparing-layout-card-contant {
+    padding: 0px;
+}
+.afs-grade-badge {
+    margin-bottom: 2px;
+}
+.afs-onetime-section {
+    padding: 20px 10px;
+}
+.afs-grade-amount {
+    font-size: 20px;
+    line-height: 28px;
+}
+.afs-onetime-heading {
+    font-size: 18px;
+    line-height: 28px;
+}
+.admissions-open-layouts {
+    padding: 60px 0px;
+}
+.admissions-open-card{
+    border-radius: 16px;
+}
+.admissions-open-card-contant {
+    padding: 35px 15px;
+}
+    .aoc-btn--primary, .aoc-btn--outline{
+             font-size: 15px;
+    line-height: 26px;
+    width: 100%;   
+    }
+  .aoc-btn--link  {
+                font-size: 15px;
+    line-height: 26px;
+    width: 100%;   
+    text-align: center;
+    }
+    .faq-layout-section {
+        padding: 0px 0px 60px;
+        overflow: hidden;
+    }
+        .faq-main-heading {
+      font-size: 26px;
+    line-height: 36px;     
+        }
+        .faq-layout-left {
+            margin-bottom: 0px;
+        }
+        .faq-item {
+            padding: 14px 12px;
+        
+        }
+        .faq-question {
+            padding: 0px;
+            font-size: 15px;
+        }
+    .faq-item.is-open .faq-answer-inner {
+        padding: 10px 0px 0px 0px;
+    }
+    .connect-with-layout {
+        padding: 60px 0px 30px;
+    }
+    .connect-heading {
+              font-size: 26px;
+    line-height: 36px;
+    }
+    .connect-subtext {
+             font-size: 15px;
+    line-height: 26px;
+    width: 100%;   
+    }
+    .connect-watermark {
+        display: none;
+    }
+
+}

@@ -883,16 +883,17 @@ a {
 
 @media (max-width: 767.98px) {
   .acampus-designed-layout-slider {
-    width: auto;
+    width: 100%;
     height: auto;
-    gap: 14px;
-    margin: 0 -12px;
-    padding: 18px 12px 26px;
+    gap: 12px;
+    margin: 0;
+    padding: 18px 16px 26px;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
   }
 
   .acampus-designed-layout-slider::-webkit-scrollbar {
@@ -902,16 +903,18 @@ a {
   .acampus-designed-layout-slide-card,
   .acampus-designed-layout-slide-card.is-active,
   .acampus-designed-layout-slide-card:not(.is-active) {
-    height: 290px;
+    height: 320px;
     min-width: 0;
-    flex: 0 0 min(82vw, 360px);
+    flex: 0 0 calc(100vw - 48px);
+    max-width: 400px;
     padding: 18px;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
+    border-radius: 16px;
   }
 
   .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-number {
-    top: 12px;
-    left: 12px;
+    top: 16px;
+    left: 16px;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -920,9 +923,46 @@ a {
     font-size: 11px;
   }
 
+  /* Reset vertical writing mode on ALL cards on mobile */
+  .acampus-designed-layout-slide-card .acampus-card-content,
+  .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-content {
+    position: absolute;
+    inset: auto 16px 16px 16px;
+    top: auto;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .acampus-designed-layout-slide-card .acampus-card-title,
+  .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-title {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 20px;
+    white-space: normal;
+    color: #fff;
+  }
+
+  .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-description {
+    display: block;
+    opacity: 1;
+    transform: none;
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
   .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-action {
-    right: 18px;
-    bottom: 20px;
+    display: inline-flex;
+    opacity: 1;
+    transform: none;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
     width: 34px;
     height: 34px;
     border: 0;
@@ -936,35 +976,6 @@ a {
 
   .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-action::after {
     content: none;
-  }
-
-  .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-content {
-    right: 18px;
-    top: auto;
-    bottom: 20px;
-    left: 18px;
-    align-items: flex-start;
-    transform: none;
-    writing-mode: horizontal-tb;
-  }
-
-  .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-title {
-    font-size: 21px;
-    white-space: normal;
-  }
-
-  .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-description {
-    display: block;
-    opacity: 1;
-    transform: none;
-  }
-
-  .acampus-designed-layout-slide-card:not(.is-active) .acampus-card-action {
-    right: 18px;
-    bottom: 20px;
-    display: inline-flex;
-    opacity: 1;
-    transform: none;
   }
 }
 
